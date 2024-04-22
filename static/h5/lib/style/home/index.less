@@ -1,0 +1,269 @@
+@charset "utf-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    background-color: #f6f6f6;
+    padding-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+li,
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: PingFang SC, Verdana, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+    font-size: 100%;
+    font-weight: 500;
+    color: #000;
+    line-height: 1.35;
+}
+
+img {
+    border: none;
+    max-width: 100%;
+}
+
+.container {
+    width: 850px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.pd15 {
+    padding: 15px;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.mb15 {
+    margin-bottom: 15px;
+}
+
+.pr {
+    position: relative;
+}
+
+.f-22 {
+    font-size: 22px;
+}
+
+.app-card {
+    overflow: auto;
+}
+
+.app-card .app-logo {
+    float: left;
+    width: 180px;
+    height: 180px;
+    border-radius: 4px;
+}
+
+.app-card .app-logo .icon {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 180px;
+    height: 180px;
+    border-radius: 4px;
+    background: #e6e6e6;
+    background-size: 100%;
+}
+
+.app-card .app-logo .app-cover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150% !important;
+    height: 150% !important;
+    max-width: none;
+    opacity: .3;
+    transform: translate(-50%, -50%);
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -ms-filter: blur(10px);
+    -o-filter: blur(10px);
+    filter: blur(10px);
+}
+
+.app-card .app-logo .icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-sizing: border-box;
+    width: 80px;
+    height: 80px;
+    max-width: 100%;
+    border: 4px solid rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    transition: all .3s;
+    transform: translate(-50%, -50%);
+}
+
+.app-card .app-logo .icon i img {
+    width: auto;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.app-card .app-des {
+    float: right;
+    padding-left: 30px;
+    width: calc(100% - 210px);
+}
+
+.app-info .des-left {
+    float: left;
+    padding-top: 15px;
+    width: calc(100% - 200px);
+}
+
+.app-card .app-des .data {
+    overflow: hidden;
+    padding: 20px;
+    padding-bottom: 0;
+    background: #F7F8FC;
+    list-style: none;
+}
+
+.app-card .app-des .data li {
+    float: left;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    width: 50%;
+    font-size: 13px;
+}
+
+.app-info .down {
+    float: right;
+    padding-top: 15px;
+    padding-left: 30px;
+    width: 170px;
+}
+
+.app-info .down .godown {
+    padding-bottom: 15px;
+}
+
+.app-info .down div {
+    max-width: 170px;
+    min-width: auto;
+    text-align: center;
+}
+
+.app-info .down a {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 4px;
+    background: #ff6600;
+    background-image: linear-gradient(-40deg, #ff6600, #ffa365);
+    color: #fff;
+    font-size: 15px;
+}
+
+.app-info .down .comment a {
+    background: #409EFF;
+    background-image: linear-gradient(-40deg, #409EFF, #99cbff);
+}
+
+.app-content {
+    padding: 25px 20px 15px 20px;
+    background: #fff;
+}
+
+.app-content .article-content {
+    margin: 0px;
+    padding: 12px 0;
+    border: none !important;
+    color: #333;
+    font-size: 15px;
+}
+
+.article_content .article-content p {
+    display: block;
+    margin-bottom: 5px;
+    line-height: 30px;
+}
+
+.article_content .article-content img {
+    height: auto !important;
+    max-width: 100%;
+}
+
+.article-end {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 100%;
+    }
+
+    .app-card {
+        .app-logo {
+            height: auto !important;
+            width: 100%;
+            padding-left: 0px;
+
+            .icon {
+                width: 100%;
+            }
+        }
+
+        .app-des {
+            height: auto !important;
+            width: 100%;
+            padding-left: 0px;
+
+            .app-info {
+                .des-left {
+                    height: auto !important;
+                    width: 100%;
+                    padding-left: 0px;
+                }
+
+                .down {
+                    height: auto !important;
+                    width: 100%;
+                    padding-left: 0px;
+
+                    div {
+                        margin: 0 !important;
+                        width: 50%;
+                        max-width: 50%;
+                        float: left;
+                    }
+                }
+            }
+        }
+    }
+}
